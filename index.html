@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>愛生会内科・婦人科クリニック</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/vegas.min.css" />
+
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script script type="text/javascript" src="js/vegas.min.js"></script>
+    <script src = "js/main.js" type = "text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHhRpagKr2EIr3sBitqzKBTCgGf4eXwvM&callback=initMap" async defer></script>
+
+  </head>
+
+  <body>
+
+    <div id="wrap">
+
+      <header>
+
+        <div class="humburger-icon">
+          <i class="fas fa-bars fa-2x open" onclick="open_menu()"></i>
+          <div class="close" onclick="close_menu()">×</div>
+        </div>
+
+        <div class="humburger-menu">
+
+          <nav>
+
+            <ul>
+
+              <li><a href="#" onclick="close_menu()">ホーム</a></li>
+              <li><a href="#" onclick="close_menu()">当院について</a></li>
+              <li><a href="#" onclick="close_menu()">診察案内</a></li>
+              <li><a href="#" onclick="close_menu()">お知らせ</a></li>
+              <li><a href="#" onclick="close_menu()">交通アクセス</a></li>
+              <li><a href="#" onclick="close_menu()">医師・スタッフ紹介</a></li>
+              <li><a href="#" onclick="close_menu()">採用情報</a></li>
+
+            </ul>
+
+          </nav>
+
+          <p>
+            <span class="small">〒346-0003</span><br>
+            埼玉県久喜市中央4-3-1<br>
+            <span class="tel">tel.0418-21-0721</span>
+          </p>
+
+        </div>
+
+        <div id="headerTop">
+          <div class="main-container flex space-between">
+
+            <div id="headerTop-left" class="flex">
+
+              <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+
+              <div class="tel">
+                <p>
+                  tel.0418-21-0721
+                </p>
+              </div>
+
+              <div class="flex address">
+                <p>
+                  <span class="small">〒346-0003</span><br>
+                  埼玉県久喜市中央4-3-1
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="headerTop-right">
+              <div id="fontSize" class="flex">
+                文字
+                <table>
+                  <tr>
+                    <td class="fontSize-box now">小</td>
+                    <td class="fontSize-box">中</td>
+                    <td class="fontSize-box">大</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div id="main-visual">
+          <h1><img src="images/logo.png"></h1>
+        </div>
+
+        <div id="js-trigger"></div>
+
+        <div id="headerBottom">
+
+          <div class="main-container flex">
+
+            <div class="tel">
+              <p>
+                tel.0418-21-0721
+              </p>
+            </div>
+
+            <div class="address">
+              <p>
+                <span class="small">〒346-0003</span><br>
+                埼玉県久喜市中央4-3-1
+              </p>
+            </div>
+
+            <nav>
+              <ul class="flex">
+                <li><a href="#">当院について</a></li>
+                <li><a href="#">診察案内</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="#">交通アクセス</a></li>
+                <li><a href="#">医師・スタッフ紹介</a></li>
+                <li><a href="#">採用情報</a></li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+
+      </header>
+
+
+      <main>
+
+        <div class="main_01 main-container">
+
+          <h2>
+            診断時間
+            <span class="h2-right red">休診日/水曜午後・日曜日・祝日</span>
+          </h2>
+
+          <table border="1" class="internal-medicine">
+
+            <tr>
+              <th class="border-radius_01">内科・小児科</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+              <th class="border-radius_02">日</th>
+            </tr>
+
+            <tr>
+              <td>9:00 ~ 12:00</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>×</td>
+            </tr>
+
+            <tr>
+              <td class="border-radius_03">14:00 ~ 19:00</td>
+              <td>○</td>
+              <td>○</td>
+              <td>×</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○(18:00まで)</td>
+              <td class="border-radius_04">×</td>
+            </tr>
+
+          </table>
+
+          <p class="tbl-info red">※土曜日の午後の診療は18:00までです。</p>
+
+
+          <table border="1" class="gynecology">
+
+            <tr>
+              <th class="border-radius_01">産婦人科</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+              <th class="border-radius_02">日</th>
+            </tr>
+
+            <tr>
+              <td>9:00 ~ 12:00</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>×</td>
+            </tr>
+
+            <tr>
+              <td class="border-radius_03">14:00 ~ 19:00</td>
+              <td>予約のみ</td>
+              <td>予約のみ</td>
+              <td>×</td>
+              <td>予約のみ</td>
+              <td>予約のみ</td>
+              <td>予約のみ</td>
+              <td class="border-radius_04">×</td>
+            </tr>
+
+          </table>
+
+          <p class="tbl-info red">※土曜日の午後の診療は18:00までです。</p>
+
+          <div class="link">
+            <a href="#">診察案内へ ＞</a>
+          </div>
+
+        </div>
+
+
+
+        <div class="main_02">
+
+          <div class="main-container">
+
+            <h2>お知らせ</h2>
+
+            <div id="info-container">
+
+              <p class="info-heading">
+                <a href="#"><span class="date">2020. 03. 10</span> <span class="important red">!</span> <span class="red info">【重要】新型コロナウイルスへの本院の対応について</span></a>
+              </p>
+
+              <p class="info-heading">
+                <a href="#"><span class="date">2020. 07. 01</span> <span class="space"></span> <span class="info">「施設基準」届出の内容を更新いたしました</span></a>
+              </p>
+
+              <p class="info-heading">
+                <a href="#"><span class="date">2020. 04. 27</span> <span class="space"></span> <span class="info">2020年ゴールデンウィーク期間中の外来休診のお知らせ</span></a>
+              </p>
+
+              <p class="info-heading">
+                <a href="#"><span class="date">2019. 12. 27</span> <span class="space"></span> <span class="info">年末年始の外来休診のお知らせ</span></a>
+              </p>
+
+            </div>
+
+            <div class="link">
+              <a href="#">一覧を見る ＞</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="main_03 main-container">
+
+          <h2>ご案内</h2>
+
+          <div id="guidance-container">
+
+            <h3 class="tab internal-medicine t-now">内科・小児科</h3>
+
+            <div class="guidance-box internal-medicine t-now">
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 内科一般</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 動脈硬化の検査</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 糖尿病・高血圧のご相談</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 禁煙外来</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 甲状腺の病気</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 予防接種(成人・小児)</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 健康診断</a>
+              </div>
+
+            </div>
+
+            <h3 class="tab gynecology hover-up">産婦人科</h3>
+
+            <div class="guidance-box gynecology hidden">
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 婦人科一般</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 子宮脱</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 子宮筋腫、子宮内膜症</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 子宮がん検診</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 性感染症</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 人工妊娠中絶</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 産後母乳マッサージ</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 更年期・思春期相談</a>
+              </div>
+
+              <div class="g-link-box">
+                <a href="#"><span class="g-arrow"><i class="fas fa-angle-right"></i></span> 母親学級</a>
+              </div>
+
+            </div>
+
+            <div class="g-under flex">
+
+              <div class="g-under-button">
+                <a href="#">
+                  <img src="images/wakaba.png">
+                  初めての方へ
+                </a>
+              </div>
+
+              <div class="g-under-button">
+                <a href="#">
+                  <img src="images/calendar.png">
+                  予約
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="main_04 main-container">
+
+          <h2>交通アクセス</h2>
+
+          <div id="map"></div>
+
+          <div class="map-bottom flex">
+
+            <div class="address">
+              <span class="small">〒346-0003</span><br>
+              埼玉県久喜市中央4丁目3-1
+            </div>
+
+            <div class="link">
+              <a href="#">詳しくはこちら ＞</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+
+      <aside>
+
+        <div class="main-container">
+          <h2>愛生会コラム</h2>
+
+          <div class="column-box flex">
+
+            <div class="column">
+              <a href="#">
+                <h3>ドクターブログ</h3>
+                <img src="images/blog-img.png">
+              </a>
+            </div>
+
+            <div class="column">
+              <a href="#">
+                <h3>「当院名称」由来の額</h3>
+                <img src="images/gaku_01.png">
+              </a>
+            </div>
+
+            <div class="column">
+              <a href="#">
+                <h3>「彌堅」の額について</h3>
+                <img src="images/gaku_02.png">
+              </a>
+            </div>
+
+            <div class="column">
+              <a href="#">
+                <h3>特別企画</h3>
+                <img src="images/baby.png">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+
+      <footer>
+
+        <div class="footer-container flex main-container">
+
+          <div class="footer-left">
+
+            <img src="images/logo.png">
+            <div class="address">
+              <span class="small">〒346-0063</span><br>
+              埼玉県久喜市中央4-3-1<br>
+              tel.0418-21-0721
+            </div>
+
+          </div>
+
+          <div class="footer-center">
+
+            <div class="nav">
+
+              <ul class="pc">
+                <li><a href="#">＞ ホーム</a></li>
+                <li><a href="#">＞ 当院について</a></li>
+                <li><a href="#">＞ 診察案内</a></li>
+                <li><a href="#">＞ お知らせ</a></li>
+                <li><a href="#">＞ 交通アクセス</a></li>
+                <li><a href="#">＞ 医師・スタッフ紹介</a></li>
+                <li><a href="#">＞ 採用情報</a></li>
+              </ul>
+
+              <ul class="smartphone">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">当院について</a></li>
+                <li><a href="#">診察案内</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="#">交通アクセス</a></li>
+                <li><a href="#">医師・スタッフ紹介</a></li>
+                <li><a href="#">採用情報</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="footer-right">
+
+            <h2>外部リンク</h2>
+            <ul>
+              <li><a href="#">日本医師会</a></li>
+              <li><a href="#">埼玉県医師会</a></li>
+              <li><a href="#">日本母性保護医協力会</a></li>
+              <li><a href="#">おぎゃあ献金</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="copyright">(c)Copyright 2020 AISEIKAI CLINIC All Right Reserved</div>
+
+      </footer>
+
+    </div>
+
+
+  </body>
+
+</html>
